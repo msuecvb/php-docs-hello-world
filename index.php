@@ -25,6 +25,7 @@ try {
 }
 
 $sum += 1;
+echo "ここが最後"
 echo $sum;
 
 ?>
