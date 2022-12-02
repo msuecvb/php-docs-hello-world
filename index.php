@@ -24,8 +24,4 @@ try {
     echo "エラー".$e->getMessage();
 }
 
-$sum += 1;
-echo "ここが最後"
-echo $sum;
-
 ?>
