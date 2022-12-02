@@ -1,5 +1,5 @@
 <?php
-
+/*
 // エラー時に例外をスローするように登録
 set_error_handler(function($errno, $errstr, $errfile, $errline) {
     if (!(error_reporting() & $errno)) {
@@ -7,8 +7,9 @@ set_error_handler(function($errno, $errstr, $errfile, $errline) {
     }
     throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
 });
+*/
 
-echo "こんばんは！みおん!!";
+echo "こんばんは！";
 
 $num = rand(0, 1);
 if ($num == 0) {
