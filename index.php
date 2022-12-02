@@ -1,5 +1,13 @@
 <?php
 
+// エラー時に例外をスローするように登録
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+    if (!(error_reporting() & $errno)) {
+        return;
+    }
+    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
+});
+
 echo "こんばんは！みおん!!";
 
 $num = rand(0, 1);
@@ -15,5 +23,8 @@ try {
 } catch (Exception $e) {
     echo "エラー".$e->getMessage();
 }
+
+$sum += 1;
+echo $sum;
 
 ?>
