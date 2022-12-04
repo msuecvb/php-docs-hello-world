@@ -1,24 +1,6 @@
 <?php
-/*
-// エラー時に例外をスローするように登録
-set_error_handler(function($errno, $errstr, $errfile, $errline) {
-    if (!(error_reporting() & $errno)) {
-        return;
-    }
-    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
-});
-*/
 
-echo "こんばんは！";
-
-$num = rand(0, 1);
-if ($num == 0) {
-echo "今日の運勢は大吉です。";
-} else {
-echo "今日の運勢は吉です。";
-}
-
- $serverName = "https://smplephp.azurewebsites.net"; // update me
+$serverName = "https://smplephp.azurewebsites.net"; // update me
     $connectionOptions = array(
         "Database" => "test-sql-php.database.windows.net", // update me
         "Uid" => "testuser", // update me
@@ -38,6 +20,27 @@ echo "今日の運勢は吉です。";
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
     sqlsrv_free_stmt($getResults);
+
+/*
+// エラー時に例外をスローするように登録
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+    if (!(error_reporting() & $errno)) {
+        return;
+    }
+    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
+});
+*/
+
+echo "こんばんは！";
+
+$num = rand(0, 1);
+if ($num == 0) {
+echo "今日の運勢は大吉です。";
+} else {
+echo "今日の運勢は吉です。";
+}
+
+ 
 
 /*
 
