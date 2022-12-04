@@ -1,5 +1,5 @@
 <?php
-
+/*
 $serverName = "test-sql-php.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "test-sql-php-database", // update me
@@ -20,6 +20,7 @@ $serverName = "test-sql-php.database.windows.net"; // update me
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
     sqlsrv_free_stmt($getResults);
+    */
 
 /*
 // エラー時に例外をスローするように登録
