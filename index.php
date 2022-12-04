@@ -1,8 +1,8 @@
 <?php
 
-$serverName = "https://smplephp.azurewebsites.net"; // update me
+$serverName = "test-sql-php.database.windows.net"; // update me
     $connectionOptions = array(
-        "Database" => "test-sql-php.database.windows.net", // update me
+        "Database" => "test-sql-php-database", // update me
         "Uid" => "testuser", // update me
         "PWD" => "Yume$2020" // update me
     );
