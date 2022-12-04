@@ -1,5 +1,5 @@
 <?php
-/*
+
 $serverName = "test-sql-php.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "test-sql-php-database", // update me
@@ -8,7 +8,7 @@ $serverName = "test-sql-php.database.windows.net"; // update me
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
-    $tsql= "SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName
+    $tsql= "SELECT TOP 1 pc.Name as CategoryName, p.name as ProductName
          FROM [SalesLT].[ProductCategory] pc
          JOIN [SalesLT].[Product] p
          ON pc.productcategoryid = p.productcategoryid";
@@ -20,7 +20,7 @@ $serverName = "test-sql-php.database.windows.net"; // update me
      echo ($row['CategoryName'] . " " . $row['ProductName'] . PHP_EOL);
     }
     sqlsrv_free_stmt($getResults);
-    */
+ 
 
 /*
 // エラー時に例外をスローするように登録
